@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Video Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav">
+            <a href="">Pam</a>
+            <a href="">Info</a>
+            <a href="">Project(44)</a>
+        </div>
+        <div class="brand">
+            <h4>Brands & e-commerce</h4>
+            <p>We design high performance websites for committed brands. They are fast, environmentally friendly and optimised for SEO.</p>
+        </div>
+    </header>
+    <div class="header2">
+        <span class="left">Selected Work</span>
+    </div>
+    <span class="right">View all Works</span>
+    <span style="font-size: 200px; position: fixed; bottom: 0; left: 0; padding: 0px;">&#9913;</span>
+
+    <div class="image-container">
+        <div class="image-item">
+            <p class="upper">Fratelli Rossi</p>
+            <img src="image1.avif" alt="Project Image">
+            <div class="video-overlay">
+                <video autoplay loop muted>
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="image-item">
+            <p class="upper">Goodmoods Editions</p>
+            <img src="image2.avif" alt="Project Image">
+            <div class="video-overlay">
+                <video autoplay loop muted>
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="image-item">
+            <p class="upper">Lutues de Turte</p>
+            <img src="image4.avif" alt="Project Image">
+            <div class="video-overlay">
+                <video autoplay loop muted>
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="image-item">
+            <p class="upper">Rebellion</p>
+            <img src="image3.avif" alt="Project Image">
+            <div class="video-overlay">
+                <video autoplay loop muted>
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="image-item">
+            <p class="upper">What</p>
+            <img src="image5.avif" alt="Project Image">
+            <div class="video-overlay">
+                <video autoplay loop muted>
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="image-item">
+            <p class="upper">Merch Bigloo and oil</p>
+            <img src="image6.avif" alt="Project Image">
+            <div class="video-overlay">
+                <video autoplay loop muted>
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="full-image-container">
+        <img src="image7.avif" alt="Your Image">
+    </div>
+    
+    <footer>
+
+        <div class="foot">
+
+            <div>
+
+                <span>Agency</span>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum aperiam perferendis neque impedit, maxime minus sint corporis illum e</p></div>
+    
+                <div>
+                    <span>Together all</span></div>
+        </div>
+
+        <p>&copy; 2025 Portfolio Website</p>
+    </footer>
+
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(171, 151, 124);
+        padding-top: 80px; /* Offset for fixed header */
+    }
+    .header2 {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        /* top: 0;
+        left: 0; */
+        /* width: 100%;
+        padding: 10px 20px; */
+        font-size: 2.2rem;
+        background: rgba(255, 255, 255, 0);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    .right{
+        margin-left: 90%;
+        position: fixed;
+        font-size: 2.2rem;
+    }
+    /* Fixed Header */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .upper{
+        margin-left: 70%;
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .full-image-container {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+}
+
+.full-image-container img {
+    width: 100%; /* Cover full width */
+    height: 70%; /* Cover 50% of the viewport height */
+    object-fit: cover; /* Ensure the image covers the space properly */
+}
+
+    .work {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 5%;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-item {
+        position: relative;
+        width: 60%;
+        margin-bottom: 10%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .image-item img {
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+    .video-overlay {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 2; /* Ensure the video is above the image */
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Match the image's border radius */
+}
+
+.video-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the overlay area */
+    opacity: 1; /* Ensure the video is fully visible */
+}
+    .video-overlay:hover::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    z-index: 1;
+    pointer-events: none; /* Ensure the overlay doesn't block interactions */
+}
+/* Default body background */
+body {
+    background-color: rgb(171, 151, 124);
+    padding-top: 80px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Change body color when each image-item is hovered */
+/* Default body background */
+body {
+    background-color: rgb(171, 151, 124);
+    padding-top: 80px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change body color when each image-item is hovered */
+body:has(.image-item:nth-child(1):hover) {
+    background-color: #8B4513; /* Brown */
+}
+body:has(.image-item:nth-child(2):hover) {
+    background-color: #008000; /* Green */
+}
+body:has(.image-item:nth-child(3):hover) {
+    background-color: #FFC0CB; /* Pink */
+}
+body:has(.image-item:nth-child(4):hover) {
+    background-color: #A9A9A9; /* Brownish Gray */
+}
+body:has(.image-item:nth-child(5):hover) {
+    background-color: #FFD700; /* Golden */
+}
+body:has(.image-item:nth-child(6):hover) {
+    background-color: #FF0000; /* Red */
+}
+
+
+
+    footer {
+        text-align: center;
+        /* padding: 20px; */
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        /* margin-top: 20px; */
+    }
+
+    .foot{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+</style>
